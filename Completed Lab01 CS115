@@ -1,0 +1,263 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 5,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python",
+      "version": "3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "jVRNvO97KRzC"
+      },
+      "source": [
+        "# CS 115 — Lab 01: Welcome to Programming with Colab\n",
+        "Sonoma State University • Computer Science • Fall 2025  \n",
+        "**Sections:** 001 / 002 / 003  \n",
+        "**Instructor:** Andrew Bond (andrew.bond@sonoma.edu)\n",
+        "\n",
+        "This lab happens **before our first class session**. You don’t need any programming background! Today we’ll just:\n",
+        "- Learn how to open and run a Colab notebook\n",
+        "- Write your first Python commands\n",
+        "- Add a short Markdown reflection\n",
+        "\n",
+        "**What to turn in:** Upload your completed notebook to Canvas at the end.\n"
+      ],
+      "id": "jVRNvO97KRzC"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "NAEOIsx6KRzE"
+      },
+      "source": [
+        "## Warm-up (1 pt)\n",
+        "Run the cell below. It should print today’s date and your Python version."
+      ],
+      "id": "NAEOIsx6KRzE"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "warmup",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "90916af6-6185-4e5c-fcd7-eb0a71f676f7"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python: 3.11.13\n",
+            "Today: 2025-08-19\n"
+          ]
+        }
+      ],
+      "source": [
+        "import sys, datetime\n",
+        "print(\"Python:\", sys.version.split()[0])\n",
+        "print(\"Today:\", datetime.date.today().isoformat())"
+      ],
+      "id": "warmup"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "p_S-HBbgKRzF"
+      },
+      "source": [
+        "## Q1: Print your name (1 pt)\n",
+        "Use the `print()` function to say hello with your name.\n",
+        "\n",
+        "**Example**:\n",
+        "```python\n",
+        "print(\"Hello, my name is Ada\")\n",
+        "```"
+      ],
+      "id": "p_S-HBbgKRzF"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "q1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "5ed9fac7-3044-4e2a-b63b-325d7559f3a3"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello, my name is Shawn\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Hello, my name is Shawn\")"
+      ],
+      "id": "q1"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "MOWz3umuKRzG"
+      },
+      "source": [
+        "## Q2: Print some math (1 pt)\n",
+        "Try using Python as a calculator. Print the answers to a few math problems.\n",
+        "\n",
+        "**Examples**:\n",
+        "```python\n",
+        "print(2 + 3)\n",
+        "print(10 - 4)\n",
+        "print(7 * 6)\n",
+        "```"
+      ],
+      "id": "MOWz3umuKRzG"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "q2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "700cc760-3cd8-4874-da5b-7c38111b8159"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n",
+            "2\n",
+            "60\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(5 + 3)\n",
+        "print(10 - 8)\n",
+        "print(10 * 6)"
+      ],
+      "id": "q2"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "CmnyxA0VKRzH"
+      },
+      "source": [
+        "## Q3: Add some Markdown text (1 pt)\n",
+        "Add a **Text cell** (instead of Code). Type something like:\n",
+        "\n",
+        "- This is my first lab in CS115!\n",
+        "- I’m excited to learn Python.\n",
+        "\n",
+        "Try bold (**word**), italics (*word*), or a list.\n"
+      ],
+      "id": "CmnyxA0VKRzH"
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "*   This is my first *lab* in CS115!\n",
+        "*   I'm excited to learn **Python**."
+      ],
+      "metadata": {
+        "id": "cgzcoowxK1L0"
+      },
+      "id": "cgzcoowxK1L0"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zZsXjJX8KRzH"
+      },
+      "source": [
+        "## Q4: Reflection (1 pt)\n",
+        "Answer in a Text/Markdown cell:\n",
+        "1. One thing I learned today:\n",
+        "2. One question I still have:\n",
+        "3. (If applicable) **AI usage note**: Did you use any AI tool? If so, what did you ask and how did you use the answer?\n"
+      ],
+      "id": "zZsXjJX8KRzH"
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1.   I learned how to use Google Colab and even coded a little using Python, even though it was a small warm up.\n",
+        "2.   Why use one coding language over the other? Is it preference or are there pros/cons to each?\n",
+        "3.   No AI\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "76OmhU5RLPsp"
+      },
+      "id": "76OmhU5RLPsp"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6_aXqoBCKRzJ"
+      },
+      "source": [
+        "## Stretch (optional, ungraded)\n",
+        "Edit this program to say something fun about you.\n"
+      ],
+      "id": "6_aXqoBCKRzJ"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "stretch",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "98376702-e91b-41cd-a914-f25d498528e4"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "GO BIRDS\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"GO BIRDS\")"
+      ],
+      "id": "stretch"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "dVs1H61yKRzK"
+      },
+      "source": [
+        "_Last updated: August 19, 2025_"
+      ],
+      "id": "dVs1H61yKRzK"
+    }
+  ]
+}
